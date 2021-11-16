@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF_8" />
+    <title>Tugas CSS - Niomic</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+    <style>
+      body {
+        background-color: #333333;
+      }
+
+      .form-center {
+        margin: 0 auto;
+        width: 600px;
+      }
+
+      label {
+        color: white;
+        margin-bottom: 10px;
+      }
+
+      div {
+        margin-bottom: 20px;
+      }
+
+      .image-title {
+        text-align: center;
+      }
+
+      span {
+        color: blue;
+      }
+
+      a {
+        text-decoration: none;
+      }
+
+      :root {
+        --bs-body-color: rgb(247, 247, 247);
+      }
+      [type="submit"] {
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="form-center mt-5">
+      <div class="image-title">
+        <img src="image/lampung.jpg" class="rounded-circle" alt="gambar utama" width="200" height="130" />
+      </div>
+      <form>
+        <div>
+          <label>Nama Lengkap</label>
+          <input type="text" placeholder="Nama Lengkap" class="form-control" />
+        </div>
+        <div>
+          <label>Alamat</label>
+          <textarea class="form-control"></textarea>
+        </div>
+        <div>
+          <label>Alamat Email</label>
+          <input type="email" placeholder="Alamat email (disabled)" class="form-control" />
+        </div>
+        <div>
+          <label>Password</label>
+          <input type="password" placeholder="Password" class="form-control" />
+        </div>
+        <div>
+          <label>Scan KTP</label><br />
+          <input type="file" />
+        </div>
+        <div>
+          <label
+            ><input type="checkbox" /> Saya setuju dan telah membaca <span><a href="">aturan</a></span> dan <span><a href="">ketentuan</a></span> yang berlaku</label
+          >
+        </div>
+        <button type="submit" class="btn btn-info col-12">Submit</button>
+      </form>
+    </div>
+  </body>
+</html>
